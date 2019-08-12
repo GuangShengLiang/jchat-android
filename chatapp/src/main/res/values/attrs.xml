@@ -7,7 +7,12 @@
 
         <attr name="bmpSelect" format="reference" />
     </declare-styleable>
-
+    <declare-styleable name="StickNavLayout">
+        <!--默认是否悬停tab-->
+        <attr name="isStickNav" format="boolean" />
+        <!--距离悬浮的位置-->
+        <attr name="stickOffset" format="dimension" />
+    </declare-styleable>
     <declare-styleable name="HoloCircularProgressBar">
         <attr name="stroke_width" format="dimension" />
         <attr name="progress" format="float" />
