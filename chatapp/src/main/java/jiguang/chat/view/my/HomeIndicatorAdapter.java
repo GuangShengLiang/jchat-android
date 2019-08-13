@@ -47,7 +47,7 @@ public class HomeIndicatorAdapter extends RecyclerView.Adapter<HomeIndicatorAdap
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        CommonUtil.LoadUrlImage(mContext, mList.get(position), holder.mImgView);
+//        CommonUtil.LoadUrlImage(mContext, mList.get(position), holder.mImgView);
     }
 
     @Override

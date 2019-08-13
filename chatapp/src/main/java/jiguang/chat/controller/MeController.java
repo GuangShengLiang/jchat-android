@@ -55,8 +55,8 @@ public class MeController implements View.OnClickListener {
                                 mDialog.cancel();
                                 break;
                             case R.id.jmui_commit_btn:
-                                mContext.Logout();
-                                mContext.cancelNotification();
+//                                mContext.Logout();
+//                                mContext.cancelNotification();
                                 mContext.getActivity().finish();
                                 mDialog.cancel();
                                 break;

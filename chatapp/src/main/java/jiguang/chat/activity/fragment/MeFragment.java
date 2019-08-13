@@ -8,7 +8,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import com.youth.banner.Banner;
@@ -39,8 +38,8 @@ public class MeFragment extends BaseFragment implements StickyNavLayout.OnStickS
                 super.onCreate(savedInstanceState);
         mContext = this.getActivity();
         LayoutInflater layoutInflater = getActivity().getLayoutInflater();
-        mRootView = layoutInflater.inflate(R.layout.activity_main,
-                (ViewGroup) getActivity().findViewById(R.id.main_view), false);
+        mRootView = layoutInflater.inflate(R.layout.activity_my,
+                getActivity().findViewById(R.id.main_view), false);
 //        mMeView = (MeView) mRootView.findViewById(R.id.me_view);
 //        mMeView.initModule(mDensity, mWidth);
 //        mMeController = new MeController(this, mWidth);
@@ -71,7 +70,7 @@ public class MeFragment extends BaseFragment implements StickyNavLayout.OnStickS
         mIndicatorView.addItemDecoration(divder);
         List<String> mUrls = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            mUrls.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525409191567&di=5dc20cf2404b99e43fa50678d3757776&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fexp%2Fw%3D500%2Fsign%3D7645a3a60bd162d985ee621c21dea950%2F8644ebf81a4c510fadb40f786159252dd42aa564.jpg");
+            mUrls.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565712268199&di=dc51044653c3a6aafd57ddec330d54fd&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2Fday_111031%2F1110310028aa748f66d98e39cb.jpg");
         }
         HomeIndicatorAdapter adapter = new HomeIndicatorAdapter(mUrls, mContext);
         mIndicatorView.setAdapter(adapter);
@@ -140,9 +139,9 @@ public class MeFragment extends BaseFragment implements StickyNavLayout.OnStickS
     private void setBannerData() {
         List<String> urls = new ArrayList<String>();
         for (int i = 0; i < 6; i++) {
-            urls.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525406238449&di=3847cf21b523ff27772e4d952a3530f5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F34fae6cd7b899e51fab3e9c048a7d933c8950d21.jpg");
+//            urls.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565712268199&di=dc51044653c3a6aafd57ddec330d54fd&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2Fday_111031%2F1110310028aa748f66d98e39cb.jpg");
         }
-        banner.setImages(urls).setOnBannerListener(this).setImageLoader(new GlideImageLoader()).start();
+//        banner.setImages(urls).setOnBannerListener(this).setImageLoader(new GlideImageLoader()).start();
     }
 
 
